@@ -1,14 +1,10 @@
 [
   {
-    "remote": "github",
-    "repository": "N4veenNK/vendor_asus_snow",
-    "target_path": "vendor/asus",
-    "branch": "twelve"
+    "repository" : "device_asus_sdm660-common",
+    "target_path": "device/asus/sdm660-common"
   },
   {
-    "remote": "github",
-    "repository": "device_asus_sdm660-common_snow",
-    "target_path": "device/asus/sdm660-common",
-    "branch": "twelve"
+    "repository" : "vendor_asus_X00TD",
+    "target_path": "vendor/asus"
   }
 ]
