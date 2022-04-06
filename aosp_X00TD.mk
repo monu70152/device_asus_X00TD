@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The Project Arcana OS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -25,8 +25,29 @@ PRODUCT_MANUFACTURER := asus
 # Aosp Stuff 
 TARGET_BOOT_ANIMATION_RES := 1080
 ARCANA_DEVICE := X00TD
+
+# Grapheneos Camera 
 TARGET_BUILD_GRAPHENEOS_CAMERA=true
+
+# Apn Settings 
 COPY_APN_SYSTEM := true
+
+# Quick tap feature
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Bloom and Living Universe Pixel Wallpapers
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
+# Pixel Now playing feature
+TARGET_SUPPORTS_NOW_PLAYING := true
+
+# Pixel charger animation
+USE_PIXEL_CHARGER_IMAGES := true
+
+# Gapps
 TARGET_GAPPS_ARCH := arm64
 WITH_GAPPS := true
 
