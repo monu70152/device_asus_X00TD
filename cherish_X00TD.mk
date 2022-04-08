@@ -10,42 +10,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common ArcaneOS stuff
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_X00TD
+PRODUCT_NAME := cherish_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
 PRODUCT_MANUFACTURER := asus
 
-# Aosp Stuff 
+# cherish Stuff 
 TARGET_BOOT_ANIMATION_RES := 1080
 ARCANA_DEVICE := X00TD
 
 # Grapheneos Camera 
 TARGET_BUILD_GRAPHENEOS_CAMERA=true
 
-# Apn Settings 
-COPY_APN_SYSTEM := true
-
 # Quick tap feature
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# Bloom and Living Universe Pixel Wallpapers
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-
-# Pixel Now playing feature
-TARGET_SUPPORTS_NOW_PLAYING := true
-
-# Pixel charger animation
-USE_PIXEL_CHARGER_IMAGES := true
 
 # Gapps
 TARGET_GAPPS_ARCH := arm64
@@ -62,5 +50,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "google/raven/raven:12/SP2A.220405.003/8210211:user/release-keys"
 
 # MAINTAINER STUFF
-ARCANA_MAINTAINER := 🥰Monu_Ohlyan🥰
-ARCANA_OFFICIAL := false
+CHERISH_MAINTAINER := 🥰Monu_Ohlyan🥰
+CHERISH_BUILD_TYPE := UNOFFICIAL
